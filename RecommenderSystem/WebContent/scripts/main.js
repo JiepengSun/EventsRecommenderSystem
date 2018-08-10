@@ -46,6 +46,13 @@
 		showElement(loginForm);
 		hideElement(signupForm);
 	}
+	
+	function hideForms() {
+		var loginForm = $('login-form');
+		var signupForm = $('signup-form');
+		hideElement(loginForm);
+		hideElement(signupForm);
+	}
 
 	/**
 	 * Session
@@ -75,6 +82,7 @@
 		user_fullname = result.name;
 
 		var loginForm = $('login-form');
+		var signupForm = $('signup-form');
 		var itemNav = $('item-nav');
 		var itemList = $('item-list');
 		var avatar = $('avatar');
@@ -89,6 +97,7 @@
 		showElement(welcomeMsg);
 		showElement(logoutBtn, 'inline-block');
 		hideElement(loginForm);
+		hideElement(signupForm);
 
 		initGeoLocation();
 	}
